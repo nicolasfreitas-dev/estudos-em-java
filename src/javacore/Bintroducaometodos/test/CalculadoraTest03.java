@@ -2,15 +2,12 @@ package javacore.Bintroducaometodos.test;
 
 import javacore.Bintroducaometodos.domain.Calculadora;
 
-public class CalculadoraTest01 {
+public class CalculadoraTest03 {
     public static void main(String[] args) {
         Calculadora calculadora = new Calculadora();
 
-        calculadora.somaDoisNumeros();
+        double resultado = calculadora.divideDoisNumeros(65, 5);
 
-
-        calculadora.subtraiDoisNumeros();
-
-        System.out.println("Finalizando Calculadora!");
+        System.out.println(resultado);
     }
 }

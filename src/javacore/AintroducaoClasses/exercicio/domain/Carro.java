@@ -1,4 +1,4 @@
-package javacore.AintroducaoClasses.domain;
+package javacore.AintroducaoClasses.exercicio.domain;
 
 public class Carro {
     public String nome;

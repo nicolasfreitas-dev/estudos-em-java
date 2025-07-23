@@ -1,14 +1,13 @@
-package javacore.Csobrecargametodos.test;
+package javacore.Dconstrutores.test;
 
-import javacore.Csobrecargametodos.domain.Anime;
+import javacore.Dconstrutores.domain.Anime;
 
 public class AnimeTest01 {
     public static void main(String[] args) {
-        Anime anime = new Anime();
+        Anime anime = new Anime("One Piece", "TV", 1500, "Aventura");
 //        anime.setNome("Naruto");
 //        anime.setTipo("Shounen");
 //        anime.setEpisodios(500);
-        anime.init("Naruto", "TV", 500, "Ação");
 
         anime.imprime();
     }

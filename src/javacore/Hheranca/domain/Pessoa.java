@@ -1,9 +1,13 @@
 package javacore.Hheranca.domain;
 
+// MODIFICADOR DE ACESSO "PROTECTED" DA ACESSO A TODAS AS CLASSES DO MESMO PACOTE.
+// AS SUBCLASSES QUE HERDAM DA CLASSE "PAI" POSSUEM ACESSO EM QUALQUER LUGAR, INDEPENDENTE DO PACOTE
+// EX: CONFERIR CLASSE FILHA "FuncionarioTest"
+
 public class Pessoa {
-    private String nome;
-    private String cpf;
-    private Endereco endereco;
+    protected String nome;
+    protected String cpf;
+    protected Endereco endereco;
 
     public Pessoa() {
 

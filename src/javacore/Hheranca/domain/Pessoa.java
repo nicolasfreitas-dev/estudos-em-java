@@ -8,9 +8,22 @@ public class Pessoa {
     protected String nome;
     protected String cpf;
     protected Endereco endereco;
+    static {
+        System.out.println("Dentro do bloco estático de Pessoa");
+    }
+    {
+        System.out.println("Dentro do bloco de inicialização não estático de Pessoa 1");
+    }
+    {
+        System.out.println("Dentro do bloco de inicialização não estático de Pessoa 2");
+    }
 
-    public Pessoa() {
+    // AO CRIAR UM CONSTRUTOR EM UMA CLASSE PAI, A CLASSE FILHA TAMBÉM SERÁ AFETADA EXIGINDO OS MESMOS
+    // ARGUMENTOS PARA INICIALIZACAO.
 
+    public Pessoa(String nome) {
+        System.out.println("Dentro do construtor Pessoa");
+        this.nome = nome;
     }
 
     public Pessoa(String nome, String cpf, Endereco endereco) {

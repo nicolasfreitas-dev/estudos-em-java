@@ -1,0 +1,20 @@
+package javacore.Oexception.test;
+
+// ERROS EM JAVA INDICAM PROBLEMAS GRAVES RELACIONADOS A JVM, DO QUAL A APLICAÇÃO NÃO DEVE TENTAR SE RECUPERAR E QUE
+// NÃO DEVEM SER TRATADOS DENTRO DO CÓDIGO, COMO POR EXEMPLO, StackOverflowError ou OutOfMemoryError.
+// NESSES CASOS O CÓDIGO PODE SER ALTERADO PARA EVITAR O ERRO OU
+// EM ALGUNS CASOS PODEM SER FEITOS AJUSTES NAS CONFIGURAÇÕES DA PRÓPRIA JVM.
+
+// EXCEPTIONS SÃO SITUAÇÕES ESPERADAS E QUE PODEM SER TRATADAS DENTRO DO CÓDIGO...
+
+// ERROS E EXCEPTIONS EM JAVA NÃO PASSAM DE OBJETOS QUE EXTENDEM A CLASSE THROWABLE
+
+public class StackOverflowTest01 {
+    public static void main(String[] args) {
+        recursividade();
+    }
+
+    public static void recursividade() {
+        recursividade();
+    }
+}

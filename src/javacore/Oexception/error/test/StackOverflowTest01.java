@@ -1,4 +1,4 @@
-package javacore.Oexception.test;
+package javacore.Oexception.error.test;
 
 // ERROS EM JAVA INDICAM PROBLEMAS GRAVES RELACIONADOS A JVM, DO QUAL A APLICAÇÃO NÃO DEVE TENTAR SE RECUPERAR E QUE
 // NÃO DEVEM SER TRATADOS DENTRO DO CÓDIGO, COMO POR EXEMPLO, StackOverflowError ou OutOfMemoryError.

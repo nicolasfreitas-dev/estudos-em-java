@@ -1,0 +1,18 @@
+package javacore.Oexception.runtime.test;
+
+// "RuntimeExceptions" SÃO EXCEÇÕES QUE OCORREM EM TEMPO DE EXECUÇÃO DO CÓDIGO
+
+// CHECKED => FILHAS DIRETAS DA CLASSE "Exceptions", SE NÃO FOREM TRATADAS VÃO LANÇAR ERROS EM TEMPO DE COMPILAÇÃO,
+// DESSA FORMA VOCÊ É OBRIGADO A REALIZAR O TRATAMENTO SENÃO O CÓDIGO NEM SERÁ COMPILADO.
+
+// UNCHECKED => FILHAS DE "RuntimeExceptions" E QUANDO SÃO LANÇADAS QUASE SEMPRE O PROBLEMA FOI ALGO ESCRITO PELO PROGRAMADOR.
+// VOCÊ NÃO É OBRIGADO A PROVER IMEDIATAMENTE UM TRATAMENTO PARA A EXCEPTION
+// PARA QUE O CÓDIGO SEJA COMPILADO, COMO NO CASO DO CHECKED.
+
+public class RuntimeExceptionTest01 {
+    public static void main(String[] args) {
+        int[] nums = {1,2};
+
+        System.out.println(nums[2]);
+    }
+}
